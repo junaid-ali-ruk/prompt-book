@@ -46,6 +46,7 @@ This repo is configured for a static Vercel deployment through `vercel.json`.
 - That return is a full-page navigation, so Vercel must rewrite the request to `index.html`
 - If the deployed site still shows `404: NOT_FOUND`, your live Vercel project does not have the latest rewrite config yet
 - Fix by either pushing this repo's `vercel.json` and redeploying, or by adding the same rewrite rule in Vercel Project Settings
+- The simplest working SPA fallback is `/(.*) -> /index.html`
 
 ## Notes
 
